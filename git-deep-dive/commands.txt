@@ -1,0 +1,48 @@
+stash
+-----
+stash like an internal memory, save unstaged & uncommitted changes
+> git stash
+
+restore stash changes
+> git stash apply
+
+get all stash changes
+> git stash list
+> git stash apply <stashID>
+
+add stash with a message
+> git stash push -m "<message details>"
+
+remove latest stash to commit it afterwards
+> git stash pop
+
+remove a specific stash entry
+> git stash drop <stashID>
+
+clear all stash entries
+> git stash clear
+
+reflog
+------
+bring last commits that were deleted
+> git reflog
+e.g.
+- add a file & commit
+- hard reset the last commit (HEAD~1)
+- use reflog to list the previous activity
+> git reset --hard <commitID>
+
+u can also restore a branch commit deleted by:
+- get the hash ID from the reflog of the committed file in the other branch > git reflog
+- checkout the ID > git checkout <refLogID>
+- recreate the branch > git switch -c <branchName>
+
+Merge Types
+-----------
+1- Fast-forward -> most common
+2- Non fast-forward 
+    1- Recursive -> most common
+    2- Octopus
+    3- Ours
+    4- Subtree
+
