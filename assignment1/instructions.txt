@@ -1,0 +1,22 @@
+Git Basics Assignment - Your Instructions
+
+    1. Create a new folder and initialize the repository > git init
+    2. Paste the "instructions.txt" file into this folder > done
+    3. Add a .txt file named "file-1" containing any text of your choice to the working directory > done
+    4. Create a second .txt file named "file-2" > done
+    5. Add "file-1" and "file-2" to the staging area - don't add "instructions.txt" > git add file-1.txt file-2.txt
+    6. Change the initial text you added to "file-1" > done
+    7. Now add all working directory files to the staging area > git add .
+    8. Create the first commit > git commit -m "this is the first commit"
+    9. Create a second branch named "feature" (two commands are possible) > git switch -c feature
+    10. Add a third .txt file ("file-3.txt") to this branch > git add file-3.txt
+    11. Create a new commit > git commit -m "another commit for the 3rd file to the feature branch"
+    12. Add the following text to "file-3": "I will be deleted" > done
+    13. Add the updated file to the staging area > git add file-3.txt
+    14. Undo the staged change > git reset file-3.txt
+    15. Add the following text: "Please add me to the master/main branch" > done
+    16. Commit this latest change > git add file-3.txt & > git commit -m "commit #16"
+    17. Merge the "master" (or "main") branch with "feature" > git switch master
+    18. Delete the "feature" branch > git branch -D feature
+
+And most importantly: Have fun with the assignment :) > git That was fun!!
